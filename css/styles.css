@@ -93,9 +93,9 @@ section {
     justify-content: space-evenly;
 }
 
-.resultado {
+.resultado-muestra {
     width: 20%;
-    height: 51rem;
+    height: 50rem;
     padding: 1rem;
     border-radius: 2rem;
     background-color: var(--color-secundario);
@@ -109,6 +109,11 @@ section {
 }
 .resultado img{
     margin-bottom: 2rem;
+}
+
+
+.copiar,#btn-copiar{
+    display: none;
 }
 .txt-info{
    padding: 2rem;
