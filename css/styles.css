@@ -113,6 +113,7 @@ section {
 .txt-info{
    padding: 2rem;
    text-align: center;
+   color: #495057;
 }
 .txt-no-encontrado{
     margin-bottom: 2rem;
