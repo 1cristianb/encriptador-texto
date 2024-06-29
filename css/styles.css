@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario: #F3F5FC;
+    --color-secundario: #FFFFFF;
+    --boton-activo: #22D4FD;
+    --boton-inactivo: #22D4FD;
+    --color-fuente: #0A3871;
+
+    --fuente-inter: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--fuente-inter);
+    background-color: var(--color-primario);
+}
+
+.encabezado {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem 0 0 2rem;
+}
+
+.titulo-header {
+    color: var(--color-fuente);
+    font-weight: 400;
+}
+
+.texto-ingresado {
+    height: 40rem;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1.5rem;
+    color: var(--color-fuente);
+    box-shadow: none;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: var(--color-fuente)
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.button {
+    width: 20.5rem;
+    height: 4.1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-encriptar {
+    background-color: var(--color-fuente);
+    color: white;
+}
+
+.btn-desencriptar {
+    background-color: #D8DFE8;
+    color: var(--color-fuente);
+    border: 1px var(--color-fuente) solid;
+}
+.button:hover{
+background-color: #495057;
+}
+
+.btn-desencriptar:hover{
+    color: #ffffff;
+}
+
+.botones {
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.resultado {
+    width: 20%;
+    height: 51rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 10px 11px 24px -10px #D8DFE8;
+    -moz-box-shadow: 10px 11px 24px -10px #D8DFE8;
+    box-shadow: 10px 11px 24px -10px #D8DFE8;
+}
+.resultado img{
+    margin-bottom: 2rem;
+}
+.txt-info{
+   padding: 2rem;
+   text-align: center;
+}
+.txt-no-encontrado{
+    margin-bottom: 2rem;
+}
+.info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    color: #495057;
+    font-size: x-small;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+svg {
+    font-size: medium;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--color-fuente);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer h1 {
+    font-family: var(--fuente-inter);
+    font-size: larger;
+    color: var(--color-secundario);
+    font-weight: 300;
+}
