@@ -123,6 +123,14 @@ section {
 .txt-no-encontrado{
     margin-bottom: 2rem;
 }
+
+#textoEncriptado{
+    display: flex;
+    line-height: 1.5;
+    padding: 1rem;
+    height: 42rem;
+    overflow-y: auto;
+}
 .info {
     display: flex;
     justify-content: start;
