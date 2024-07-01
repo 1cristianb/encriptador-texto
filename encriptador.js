@@ -56,6 +56,16 @@ function sinTexto() {
     document.getElementById("muestra").style.justifyContent = "center";
     document.getElementById("textoEncriptado").style.display = "none";
 }
+function copiarTexto(){
+    var textoACopiar = document.getElementById("textoEncriptado").innerText;
+    navigator.clipboard.writeText(textoACopiar)
+        .then(() => {
+            console.log('Contenido copiado al portapapeles');
+        })
+        .catch(err => {
+            console.error('Error al copiar', err);
+        });
+}
 
 function sinError() {
     document.getElementById("error").style.color = "#495057";
