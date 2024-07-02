@@ -64,7 +64,7 @@ function desencriptar() {
 }
 function mostarBotonCopiar(texto) {
     document.getElementById("primerMensaje").style.display = "none";
-    document.getElementById("copiar").style.display = "block";
+    document.getElementById("copiar").style.display = "contents";
     document.getElementById("btn-copiar").style.display = "block";
     document.getElementById("muestra").style.justifyContent = "space-between";
     document.getElementById("textoEncriptado").style.display = "block";

@@ -73,11 +73,12 @@ body {
     color: var(--color-fuente);
     border: 1px var(--color-fuente) solid;
 }
-.button:hover{
-background-color: #495057;
+
+.button:hover {
+    background-color: #495057;
 }
 
-.btn-desencriptar:hover{
+.btn-desencriptar:hover {
     color: #ffffff;
 }
 
@@ -107,36 +108,47 @@ section {
     -moz-box-shadow: 10px 11px 24px -10px #D8DFE8;
     box-shadow: 10px 11px 24px -10px #D8DFE8;
 }
-.resultado{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.resultado img{
+
+.resultado img {
+    width: 95%;
     margin-bottom: 2rem;
 }
 
 
-.copiar,#btn-copiar{
+.copiar,
+#btn-copiar {
     display: none;
+    justify-content: center;
+    width: 95%;
 }
-.txt-info{
-   padding: 2rem;
-   text-align: center;
-   color: #495057;
+
+.txt-info {
+    padding: 2rem;
+    text-align: center;
+    color: #495057;
 }
-.txt-no-encontrado{
+
+.txt-no-encontrado {
     margin-bottom: 2rem;
 }
 
-#textoEncriptado{
+#textoEncriptado {
     display: flex;
     line-height: 1.5;
     padding: 1rem;
     height: 42rem;
     overflow-y: auto;
+    overflow-x: auto;
+    width: 80%;
 }
+
 .info {
     display: flex;
     justify-content: start;
@@ -165,4 +177,47 @@ footer h1 {
     font-size: larger;
     color: var(--color-secundario);
     font-weight: 300;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .botones {
+        justify-content: center;
+    }
+
+    .resultado-muestra {
+        width: 100%;
+        padding: 0;
+        margin-top: 3rem;
+        height: 100%;
+    }
+
+    #img-txt {
+        display: none;
+    }
+
+    #textoEncriptado {
+        height: 15rem;
+        padding: 2rem;
+    }
+
+    #copiar {
+        margin-bottom: 1rem;
+    }
+    #btn-copiar {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+@media (max-width: 480px) {
+    /* Estilos para smartphones en modo retrato */
 }
