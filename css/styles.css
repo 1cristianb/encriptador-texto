@@ -177,6 +177,7 @@ footer h1 {
     font-size: larger;
     color: var(--color-secundario);
     font-weight: 300;
+    text-align: center;
 }
 
 
@@ -211,13 +212,88 @@ footer h1 {
     #copiar {
         margin-bottom: 1rem;
     }
+
     #btn-copiar {
         margin-bottom: 1rem;
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+    section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resultado-muestra {
+        width: 100%;
+        padding: 0;
+        margin-top: 3rem;
+        height: 100%;
+    }
+
+    #img-txt {
+        display: none;
+    }
+
+    #textoEncriptado {
+        height: 15rem;
+        padding: 2rem;
+    }
+
+    #copiar {
+        margin-bottom: 1rem;
+    }
+
+    #btn-copiar {
+        margin-bottom: 1rem;
+    }
+}
 
 @media (max-width: 480px) {
-    /* Estilos para smartphones en modo retrato */
+    section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        width: 95%;
+    }
+
+    .resultado-muestra {
+        width: 100%;
+        padding: 0;
+        margin-top: 3rem;
+        height: 100%;
+    }
+
+    #img-txt {
+        display: none;
+    }
+
+    #textoEncriptado {
+        height: 15rem;
+        padding: 2rem;
+    }
+
+    #copiar {
+        margin-bottom: 1rem;
+    }
+
+    #btn-copiar {
+        margin-bottom: 1rem;
+    }
 }
