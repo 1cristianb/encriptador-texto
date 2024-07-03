@@ -18,8 +18,16 @@
 body {
     font-family: var(--fuente-inter);
     background-color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
 .encabezado {
     display: flex;
     justify-content: start;
@@ -90,8 +98,14 @@ body {
 }
 
 section {
+
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap; 
+    width: 100%;
+    max-width: 1440px; 
+    margin: auto;
+    padding: 2rem;
 }
 
 .resultado-muestra {
@@ -165,13 +179,12 @@ svg {
 }
 
 footer {
-    margin-top: 3rem;
+    margin-top: auto;
     background-color: var(--color-fuente);
     padding: 1.5rem;
     display: flex;
     justify-content: center;
 }
-
 footer h1 {
     font-family: var(--fuente-inter);
     font-size: larger;
@@ -268,7 +281,8 @@ footer h1 {
     }
     section {
         flex-direction: column;
-        padding: 2rem;
+        padding: 1rem;
+        width: 90%;
     }
 
     .botones {
