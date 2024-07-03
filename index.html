@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-
+        <div class="encabezado">
+            <img src="assets/img/Logo.png">
+        </div>
     </header>
     <main>
+        <section>
+            <div class="area">
+                <textarea class="texto-ingresado" id="textoIngresado" placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+                    <div class="info">
+                        <svg viewBox="0 0 512 512" fill="currentColor" height="1em" width="1em" {...props}>
+                            <path
+                                d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0 0 114.6 0 256s114.6 256 256 256zm0-384c13.3 0 24 10.7 24 24v112c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224c0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32 32 14.3 32 32z" />
+                        </svg>
+                        <h2 id="error">Solo letras minúsculas y sin acentos</h2>
+                    </div>
+                    <div class="botones">
+                        <button class="button btn-encriptar" onclick="encriptar();">Encriptar</button>
+                        <button class="button btn-desencriptar" onclick="desencriptar();">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="resultado-muestra" id="muestra">
+                <div class="resultado" id="primerMensaje">
+                    <img src="assets/img/Muñeco.png" id="img-txt">
+                    <div class="txt-info">
+                        <h2 class="txt-no-encontrado">Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div id="textoEncriptado">
 
+                </div>
+                <div id="copiar">
+                    <button id="btn-copiar" class="button btn-desencriptar" onclick="copiarTexto();">Copiar</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <h1>Desarrollado por Cristian Boschi</h1>
     </footer>
     <script src="encriptador.js"></script>
 </body>
+
 </html>
